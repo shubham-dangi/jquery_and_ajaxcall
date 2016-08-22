@@ -1,0 +1,14 @@
+function father(){
+	var hab1 = "Singing";
+	var hab2 = "Studying";
+
+	return function(myhab){
+		console.log(hab1);
+		console.log(hab2);
+		console.log(myhab);
+	}
+}
+
+var f = father();
+f("Photography");
+console.log(f);
